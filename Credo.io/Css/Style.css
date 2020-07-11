@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    font-family: arial;
+  }
+section {
+    padding: 156px 0 100px;
+  }
+  nav{
+      opacity: 0.8;
+  }
+nav ul li a:hover{
+    color:white;
+}
+ 
