@@ -5,10 +5,15 @@
 section {
     padding: 156px 0 100px;
   }
-  nav{
-      opacity: 0.8;
-  }
+ 
 nav ul li a:hover{
     color:white;
+}
+.portada{
+  background-image: url(../Img/portada.jpg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
  
