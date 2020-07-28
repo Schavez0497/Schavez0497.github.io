@@ -12,103 +12,315 @@
     <title>Inicio</title>
 </head>
 
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Credo personal</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div>
-                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Creencia.html">Creencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mis mentores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Mis Fortalezas</a>
-                        </li>
-                    </ul>
+<div class="d-flex" id="wrapper">
+    <header id="header">
+        <!-- Sidebar -->
+        <div class="bg-light border-right " id="sidebar-wrapper">
+            <div class="sidebar-heading">Mi credo personal
+                <div class="profile">
+                    <img src="Img/Ft-Perrfil.jpg" alt="" class="img-fluid rounded-circle">
+                    <h1 class="text-black"><a href="#about">Sergio Chavez</a></h1>
                 </div>
             </div>
+            <div class="list-group list-group-flush fixed">
+                <a href="#creencia" class="list-group-item list-group-item-action bg-light">Mis creencias</a>
+                <a href="#mentores" class="list-group-item list-group-item-action bg-light">Mis mentores</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Fortalezas</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Valores</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Mis metas</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Vitilizadores</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Mi Cancion</a>
+            </div>
         </div>
-    </nav>
-    <section class="text-white portada">
-        <div class="container text-center">
-            <strong>
-            <h1>Bienvenido a mi credo personal</h1>
-            <p class="lead">Mi nombre es sergio Chavez. Soy estudiante activo de C.A.M, actualmente formo parte del
-                grupo de curso de DISEÑO WEB</p>
-            </strong>
-        </div>
-    </section>
+    </header>
+    <!-- /#sidebar-wrapper -->
 
-    <main>
-        <div class="container" style="padding: 8px;">
-            <div class="row">
-                <div class="col-md-12" style="padding: 8px;">
-                    <div class="thumbnail">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="Img/1.jpg" alt="" class="img-fluid">
-                                <strong>
-                                    <p class="text-center">Mis Creencias</p>
-                                </strong>
-                                <p class="text-center"> Aqui estan reflejadas mis creencias de la vida, desde
-                                    lo espiritual hasta de los valores.
-                                </p>
-                                <a href="Creencia.html" class="btn btn-info btn-block">Ver mas</a>
+    <!-- Page Content -->
 
-                            </div>
-                            <div class="col-md-4">
-                                <img src="Img/1.jpg" alt="" class="img-fluid">
-                                <strong>
-                                    <p class="text-center">Mis Mentores</p>
-                                </strong>
-                                <p class="text-center">Aqui estan reflejadas mis mentores que han actuado como 
-                                    guia en mi vida.
-                                </p>
-                                <a href="#" class="btn btn-info btn-block">Ver mas</a>
+    <div id="page-content-wrapper">
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+            <button class="btn btn-primary" id="menu-toggle">Menu</button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contenido
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#creencia">Mis creencias</a>
+                            <a class="dropdown-item" href="#mentores">Mis mentores</a>
+                            <a class="dropdown-item" href="#">Fortalezas</a>
+                            <a class="dropdown-item" href="#">Valores</a>
+                            <a class="dropdown-item" href="#">Mis metas</a>
+                            <a class="dropdown-item" href="#">Vitilizadores</a>
+                            <a class="dropdown-item" href="#">Mi Cancion</a>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <div class="container-fluid">
+                <h1 class="text-center " style="margin-top: 55px;">Bienvenido a mi credo personal</h1>
+            </div>
+            <!-- ======= Mi informacion ======= -->
+            <section id="about" class="informacion">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Mi información</h2>
+                        <p>Hace mas de un año me gradue de la universidad Unan Managua, de la profesión de ingeniero en
+                            sistema de información.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="Img/Ft-Perrfil.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-8 pt-4 pt-lg-0 content">
+                            <h3>Ingeniero en Sistema &amp; Futuro Web Developer.</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Fecha de nacimiento:</strong>
+                                            4 de septiembre 1997</li>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Correo:</strong>
+                                            Schavezmoraga@gmail.com
+                                        </li>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Telefono:</strong> 505
+                                            8223-3027</li>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Ciudad:</strong>
+                                            Jinotepe-Carazo
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Edad:</strong> 22</li>
+
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <img src="Img/1.jpg" alt="" class="img-fluid" >
-                                <strong>
-                                    <p class="text-center">Mis Fortalezas y debilidades</p>
-                                </strong>
-                                <p class="text-center">Aqui estan reflejadas mis fortalezas destacando mis puntos 
-                                    fuertes y mis debilidades.
+                            <p>
+                                "Hay que aprovechar cada oportunidad para conocer el destino donde queremos ir y tenerlo
+                                presente todos los dias".
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="creencia" class="creencia">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="section-title">
+                        <h2>Mis Creencias</h2>
+
+                        <p class="lead">"Vemos el mundo, no como es si no como nosotros somos".</p>
+                        <p class="lead">Nosotros formamos como es el mundo.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <img src="Img/creencia.gif" class="img-thumbnail img-fluid rounded mx-auto d-block" alt="">
+                            <p class="lead text-center" style="padding: 50px;">El examinar y comrpender lo que realmente
+                                creemos
+                                es la clave para cambiar el
+                                comportamiento y los resultados en nuestra vida</p>
+                        </div>
+                    </div>
+                    <div class="row bg-light">
+
+                        <div class="col-lg-3 col-md-6 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-simple-smile"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #1 Dios y Cristo</span>
+
+                                <p class="bg-light">Creo en Dios y Cristo. Ellos son mis guias en este mundo. Dijo Jesus
+                                    en Juan 14:6
+                                    <b>"Yo soy el camino la verdad y la vida, nadie va al padre si no es por mi."</b>
                                 </p>
-                                <a href="#" class="btn btn-info btn-block">Ver mas</a>
                             </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-md-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-document-folder"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #2 Familia</span>
+                                <p class="bg-light">Creo que mi familia me han convertido en el hombre que soy ahora,
+                                    por sus consejos y
+                                    enseñanzas. Hemos pasado por situaciones muy dificiles pero hemos encontrado las
+                                    soluciones. Mi familia es una gran inspiración para salir adelante en la vida.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-live-support"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #3 Amor</span>
+                                <p class="bg-light">Creo que el amor es muy fundamental en cada aspecto de nuestra vida
+                                    desde la
+                                    familia, hasta en nuestra vida profesional. Cada cosa que hagamos hay que hacerla
+                                    con amor, para que tengamos existo en todos lo aspectos de nuestra vida.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #4 Proposito</span>
+                                <p class="bg-light">Creo que el proposito trata de como vivamos la vida, en hacer amigos
+                                    en el camino y
+                                    encotrado un modo de disfrutar de todo lo que hagamos, siempre guiados a la
+                                    voluntada de Dios.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #5 perdon</span>
+                                <p class="bg-light">Creo que el perdon me libra de odio, recentimiento y rencor, me hace
+                                    una persona
+                                    sana espiritualmente. dice Efesios 4:32 <strong>Más bien, sean bondadosos y
+                                        compasivos unos con otros, y perdónense mutuamente, así como Dios los perdonó a
+                                        ustedes en Cristo.</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #6 Exito</span>
+                                <p class="bg-light">Creo que el exito es un deseo que debe de ser mayor que el miedo a
+                                    fracasar,
+                                    sentirse bien con lo que logramos sabiendo que es bueno.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #7 Fracaso</span>
+                                <p class="bg-light"> Creo que el fracaso nos ayuda a ver claramente mis virtudes y
+                                    debilidades, aprender
+                                    de esto a pesar de lo duro que puede llegar hacer. Esto me ayuda a convertirme en
+                                    una mejor persona.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 bg-light">
+                            <div class="count-box">
+                                <i class="icofont-users-alt-5"></i>
+                                <span data-toggle="counter-up" class="bg-light">Creencia #8 Salud fisica y mental</span>
+                                <p class="bg-light"> Creo que una buena salud fisica y mental, ayudar rapidamente a
+                                    conseguir mis metas
+                                    principales en la vida. Comer bien y tomar una actitud positiva nos haran personas
+                                    con una excelente salud.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section id="mentores" class="mentores section-bg">
+                <div class="container">
+
+                    <div class="section-title">
+                        <h2>Mis mentores</h2>
+                        <p>A lo largo de mi vida Dios a sido mi principal mentor, pero el ha puesto muchas personas
+                            que me han ayudado a enfretar diferentes situaciones, dandome consejo, apoyandome a salir
+                            adelante para poder tener exito en esta vida. </p>
+                    </div>
+
+                    <div class="owl-carousel mentores-carousel">
+
+                        <div class="mentores-item" data-aos="fade-up">
+                            <h3>Las enseñanzas de mis mentores</h3>
+                            <br>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Dios me enseño, hacer humilde. Es que me ha dado la sabiduria y guiado en la vida.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="Img/Creencia1.jpg" class="mentores-img" alt="">
+                            <h3>DIOS</h3>
+
+                        </div>
+                        <div class="mentores-item" data-aos="fade-up" data-aos-delay="200">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Mi papá me enseño, respeto, diciplina, valor y que en esta vida uno tiene que luchar por
+                                las cosas que quiere. Un gran ejemplo de superación.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="Img/mi papá.jpg" class="mentores-img" alt="">
+                            <h3>Mi papá</h3>
+                            <h4>Sergio Armengol Chavez</h4>
+                        </div>
+                        <div class="mentores-item" data-aos="fade-up" data-aos-delay="200">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Me han enseñado lo que es la verdadera amistad, lealtad, apoyo mutuo, tolerancia, y
+                                mucha bondad.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="Img/Amigos.jpg" class="mentores-img" alt="">
+                            <h3>Mis Amigos</h3>
+
+                        </div>
+
+                        <div class="mentores-item" data-aos="fade-up" data-aos-delay="300">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Cada uno de mi maestros que he tenido a lo largo de mi vida como estudiantes, me han
+                                enseñado a ser responsable, puntual, y sobre todo han sembrado en mi sus conocimientos para que pueda ser un excelente profesional.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="Img/Maestros.jpg" class="mentores-img" alt="">
+                            <h3>Mis maestros</h3>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer class="py-4 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Derechos reservados &copy; Sergio Chavez 2020</p>
-        </div>
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+            </section>
+
+        </main>
+    </div>
+
+</div>
+
+
+<footer class="py-4 bg-light">
+    <div class="container">
+        <p class="m-0 text-center text-black">Derechos reservados &copy; Sergio Chavez 2020</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script src="Scripts/js.js"></script>
 </body>
 
 </html>
