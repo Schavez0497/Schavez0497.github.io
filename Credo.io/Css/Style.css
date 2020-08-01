@@ -230,8 +230,132 @@ section {
   }
 }
 
-/*-----------------------------*/
+/*-------------Mis fortalezas----------------*/
 
+.fortalezas .fortalezas-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.fortalezas .fortalezas-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+
+.fortalezas .fortalezas-item ul {
+  padding-left: 20px;
+}
+
+.fortalezas .fortalezas-item ul li {
+  padding-bottom: 10px;
+}
+
+.fortalezas .fortalezas-item:last-child {
+  padding-bottom: 0;
+}
+
+.fortalezas .fortalezas-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+/*Mis valores*/
+
+
+
+
+.valores .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.valores .title a {
+  color: #343a40;
+}
+
+
+.valores .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.valor-item ul{
+  padding-left: 100px;
+  font-size: 14px;
+}
+.valor-item ul li{
+  padding-bottom: 10px;
+}
+.valores .img-valor{
+margin: 0 auto;
+float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 54px;
+height: 54px;
+border-radius: 50%;
+transition: 0.5s;
+border: 1px solid #050d18;
+} 
+/*Vitalizadores*/
+
+.vitalizadores .img-valor{
+  margin: 0 auto;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #050d18;
+  } 
+.vitalizadores .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  background: #fff;
+}
+
+.vitalizadores .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.vitalizadores .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.vitalizadores .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/**/
 #wrapper {
   overflow-x: hidden;
 }

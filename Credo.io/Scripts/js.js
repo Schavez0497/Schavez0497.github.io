@@ -1,4 +1,4 @@
-!(function($) {
+
 $(".mentores-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -15,8 +15,10 @@ $(".mentores-carousel").owlCarousel({
       }
     }
   });
-})(jQuery);
+
   $("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
+
+
